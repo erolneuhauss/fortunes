@@ -1,4 +1,3 @@
-
 ❯ vim
 
 Plugin "mhinz/vim-startify" lists recent edited files like this:
@@ -10,7 +9,6 @@ Plugin "mhinz/vim-startify" lists recent edited files like this:
   |[2]   ~/.config/nvim/init.vim
 ```
 %
-
 ❯ vim /etc/hosts
 :wq
 E212: Can't open file for writing: permission denied
@@ -19,16 +17,42 @@ SOLUTION: w!!
 
 (cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!)
 %
-
-kubeadm init
+❯ kubeadm init
 [ERROR IsPrivilegedUser]: user is not running as root
 
-SOLUTION: sudo !!
+SOLUTION: ❯ sudo !!
+%
+❯ sudo systemctl start docker.service && sudo systemctl start kubelet && sudo systemctl start containerd
+
+❯ r start=stop
 %
 
-sudo systemctl start docker.service && sudo systemctl start kubelet && sudo systemctl start containerd
+http httpbin.org/status/418
 
-r start=stop
+(https://httpie.io/)
 %
+❯ vim
+gcc - comment stuff out
+
+(https://github.com/tpope/vim-commentary)
+%
+g    | git
+gbc  | git checkout -b
+gbl  | git branch --verbose
+gcm  | git commit --message
+gco  | git checkout
+gfm  | git pull
+gia  | git add
+gm   | git merge
+gl   | git log --topo-order --pretty=format:"${_git_log_medium_format}"
+gls  | git log --topo-order --stat --pretty=format:"${_git_log_medium_format}"
+gp   | git push
+gwd  | git diff --no-ext-diff
+gws  | git status --ignore-submodules=${_git_status_ignore_submodules} --short
+
+(~/.zprezto/modules/git/alias.zsh)
+%
+
+
 
 
