@@ -1,0 +1,10 @@
+VIM
+
+vim /etc/hosts
+E212: Can't open file for writing: permission denied
+
+DARN! Now what?
+
+Just do :w!!
+because: cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+%
