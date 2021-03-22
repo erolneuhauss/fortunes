@@ -1,10 +1,34 @@
-VIM
 
-vim /etc/hosts
+❯ vim
+
+Plugin "mhinz/vim-startify" lists recent edited files like this:
+```
+  |[e]  <empty buffer>
+
+  |[0]   ~/git/fortunes/erol
+  |[1]   ~/.p10k.zsh
+  |[2]   ~/.config/nvim/init.vim
+```
+%
+
+❯ vim /etc/hosts
+:wq
 E212: Can't open file for writing: permission denied
 
-DARN! Now what?
+SOLUTION: w!!
 
-Just do :w!!
-because: cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+(cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!)
 %
+
+kubeadm init
+[ERROR IsPrivilegedUser]: user is not running as root
+
+SOLUTION: sudo !!
+%
+
+sudo systemctl start docker.service && sudo systemctl start kubelet && sudo systemctl start containerd
+
+r start=stop
+%
+
+
