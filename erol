@@ -22,17 +22,17 @@ SOLUTION: w!!
 
 SOLUTION: ❯ sudo !!
 %
-❯ sudo systemctl start docker.service && sudo systemctl start kubelet && sudo systemctl start containerd
+fc — process the command line history
 
+❯ sudo systemctl start docker.service && sudo systemctl start kubelet
 ❯ r start=stop
-%
 
-http httpbin.org/status/418
-
-(https://httpie.io/)
+r: shell built-in command (r us same as fc -e -)
 %
 ❯ vim
-gcc - comment stuff out
+gcc             | comment stuff out
+:SSave          |
+:Gvdiffsplit    |
 
 (https://github.com/tpope/vim-commentary)
 %
@@ -77,6 +77,10 @@ curl -m5                    (--max-time)
 curl --header "Host: example.com" localhost
 wget -r -nd --delete-after  (--recurse --no-directories)
 wget -O - http://foo > file
+http httpbin.org/status/418
+hey http://kanboard.fritz.box -c100 -n1000
+
+(https://httpie.io/) (https://github.com/rakyll/hey)
 %
 mount | column -t
 column -t -s : /etc/passwd
@@ -89,23 +93,44 @@ k create ns test $do > test-ns.yaml
 k get ep --all-namespaces
 k run --expose
 %
-K9S
+k9s — dog Kubernetes CLI To Manage Your Clusters In Style!
 
 s-l  | sort available
 s-r  | sort ready
 c-z  | toggle faults
 c-w  | toggle wide
 %
-FZF
+fzf — A command-line fuzzy finder
+
 f    | f is an alias for fzf --preview "batcat --style=full --color \"always\" {}" --preview-window "~3"
 vf   (vf is an alias for nvim -o `f`)
 
 vim c-t tab tab | edit two files
 cd ~/git/**
+
+https://github.com/junegunn/fzf
 %
+fd — A command-line fuzzy finder
+
 fd -e sh                      | find files with .sh extension
 fd app                        | find files and directories matching "app"
 fd app --type f -e sh /etc    | find only *.sh files in dir /etc matching "app"
+
 https://github.com/sharkdp/fd
+%
+rg — (ripgrep recursively searches directories for a regex pattern while respecting your gitignore)
+rg -tpy foo   | limits your search to Python files
+rg -Tjs foo   | excludes JavaScript files from your search
+
+https://blog.burntsushi.net/ripgrep/
+%
+exa — modern replacement for ls
+
+ll    | ll is an alias for exa -bghHliS (show me everything
+llt   | llt is an alias for exa -T (tree view)
+lla   | all files
+lll   | lll is an alias for exa -l | less
+
+https://github.com/ogham/exa
 %
 
