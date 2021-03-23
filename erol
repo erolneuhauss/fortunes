@@ -59,8 +59,53 @@ Ctrl + Shift + O Split terminals horizontally
 Ctrl + Shift + E Split terminals vertically
 Ctrl + Shift + W Close current Panel
 Ctrl + Shift + T Open new tab
+Ctrl + Shift + I Open new window
 Alt + ← Move to the terminal left of the current one
 Alt + → Move to the terminal right of the current one
-%
+Super + R Rotate terminals clockwise
+Super + G Group all terminals
+Super + Shift + G Remove grouping from all terminals.
+Alt + A Broadcast to All terminals
+Alt + O Broadcast Off
 
+https://cheatography.com/elpedro/cheat-sheets/terminator
+%
+Network tips
+
+mtr                         (mytraceroute)
+curl -m5                    (--max-time)
+curl --header "Host: example.com" localhost
+wget -r -nd --delete-after  (--recurse --no-directories)
+wget -O - http://foo > file
+%
+mount | column -t
+column -t -s : /etc/passwd
+%
+KUBERNETES
+Set --dry-run=client --output=yaml
+
+exdo     (exdo is an alias for export do=("--dry-run=client" "--output=yaml")
+k create ns test $do > test-ns.yaml
+k get ep --all-namespaces
+k run --expose
+%
+K9S
+
+s-l  | sort available
+s-r  | sort ready
+c-z  | toggle faults
+c-w  | toggle wide
+%
+FZF
+f    | f is an alias for fzf --preview "batcat --style=full --color \"always\" {}" --preview-window "~3"
+vf   (vf is an alias for nvim -o `f`)
+
+vim c-t tab tab | edit two files
+cd ~/git/**
+%
+fd -e sh                      | find files with .sh extension
+fd app                        | find files and directories matching "app"
+fd app --type f -e sh /etc    | find only *.sh files in dir /etc matching "app"
+https://github.com/sharkdp/fd
+%
 
