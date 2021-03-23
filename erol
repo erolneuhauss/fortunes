@@ -31,8 +31,10 @@ r: shell built-in command (r us same as fc -e -)
 %
 ❯ vim
 gcc             | comment stuff out
-:SSave          |
-:Gvdiffsplit    |
+:SSave          | save as session
+:Gdiffsplit     | perform a vimdiff
+:Gw             | write to file and stage result
+:Gwq            | same as above and quit
 
 (https://github.com/tpope/vim-commentary)
 %
