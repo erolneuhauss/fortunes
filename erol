@@ -29,12 +29,15 @@ fc — process the command line history
 
 r: shell built-in command (r us same as fc -e -)
 %
+im and vim-fugitive
+
 ❯ vim
 gcc             | comment stuff out
 :SSave          | save as session
 :Gdiffsplit     | perform a vimdiff
 :Gw             | write to file and stage result
 :Gwq            | same as above and quit
+:Git commit     | commit in a separate window
 
 (https://github.com/tpope/vim-commentary)
 %
@@ -143,4 +146,3 @@ lll   | lll is an alias for exa -l | less
 
 https://github.com/ogham/exa
 %
-
