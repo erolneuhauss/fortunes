@@ -147,3 +147,15 @@ lll   | lll is an alias for exa -l | less
 
 https://github.com/ogham/exa
 %
+GNOME Tipps
+
+open . | opens current folder in nautilus (open is an alias for "gio open")
+
+clip        | shows gnome-gpaste history
+clipl       | pipes it to bat
+clipo       | shows above as oneliner
+clip get 6  | get the 6th entry
+
+copy: file to gnome-gpaste
+cat file | clip
+%
