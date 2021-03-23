@@ -112,6 +112,14 @@ cd ~/git/**
 
 https://github.com/junegunn/fzf
 %
+bat — A cat(1) clone with wings.
+
+bat /etc/hosts
+bat ingress.yml
+bat -A curl-pod.yml
+
+https://github.com/sharkdp/bat
+%
 fd — A command-line fuzzy finder
 
 fd -e sh                      | find files with .sh extension
