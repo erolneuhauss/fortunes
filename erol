@@ -57,7 +57,7 @@ gws  | git status --ignore-submodules=${_git_status_ignore_submodules} --short
 
 (~/.zprezto/modules/git/alias.zsh)
 %
-termiator
+terminator — Multiple GNOME terminals in one window
 
 F11 Toggle fullscreen
 Ctrl + Shift + O Split terminals horizontally
