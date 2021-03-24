@@ -37,7 +37,9 @@ gcc             | comment stuff out
 :Gdiffsplit     | perform a vimdiff
 :Gw             | write to file and stage result
 :Gwq            | same as above and quit
-:Git commit     | commit in a separate window
+:Git commit     | commit in a separate pane
+:Gdiff          | open git diff in separate pane
+10,c-w,<        | resize pane to the left
 
 (https://github.com/tpope/vim-commentary)
 %
