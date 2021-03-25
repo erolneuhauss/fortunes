@@ -50,14 +50,15 @@ gcm  | git commit --message
 gco  | git checkout
 gfm  | git pull
 gia  | git add
+gix  | git rm -r --cached
 gm   | git merge
 gl   | git log --topo-order --pretty=format:"${_git_log_medium_format}"
 gls  | git log --topo-order --stat --pretty=format:"${_git_log_medium_format}"
 gp   | git push
 gwd  | git diff --no-ext-diff
 gws  | git status --ignore-submodules=${_git_status_ignore_submodules} --short
+gwx  | git rm -r
 gRl  | git remote --verbose
-gix  | git rm -r --cached
 
 (~/.zprezto/modules/git/alias.zsh)
 %
