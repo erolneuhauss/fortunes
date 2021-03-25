@@ -40,6 +40,8 @@ gcc             | comment stuff out
 :Git commit     | commit in a separate pane
 :Gdiff          | open git diff in separate pane
 10,c-w,<        | resize pane to the left
+esx c-\ c-n     | in terminal mode switch back to NORMAL mode
+
 
 (https://github.com/tpope/vim-commentary)
 %
