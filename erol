@@ -38,7 +38,8 @@ gcc             | comment stuff out
 :Git log        | git log
 :Gdiffsplit     | perform a vimdiff
 :Gedit          | edit a file
-:Gw             | write to file and stage result (git add)
+:Gw             | Git add
+:Gr             | Git checkout
 :Gwq            | same as above and quit
 :Git commit     | commit in a separate pane
 :Gdiff          | open git diff in separate pane
