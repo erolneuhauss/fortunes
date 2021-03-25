@@ -33,7 +33,10 @@ r: shell built-in command (r us same as fc -e -)
 
 ❯ vim
 gcc             | comment stuff out
+10,c-w,<        | resize pane to the left
+esx c-\ c-n     | in terminal mode switch back to NORMAL mode
 :SSave          | save as session
+
 :Git            | like git status
 :Git log        | git log
 :Gdiffsplit     | perform a vimdiff
@@ -43,8 +46,6 @@ gcc             | comment stuff out
 :Gwq            | same as above and quit
 :Git commit     | commit in a separate pane
 :Gdiff          | open git diff in separate pane
-10,c-w,<        | resize pane to the left
-esx c-\ c-n     | in terminal mode switch back to NORMAL mode
 
 
 (https://github.com/tpope/vim-commentary)
