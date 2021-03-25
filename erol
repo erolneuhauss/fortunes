@@ -34,8 +34,10 @@ r: shell built-in command (r us same as fc -e -)
 ❯ vim
 gcc             | comment stuff out
 :SSave          | save as session
+:Git log
 :Gdiffsplit     | perform a vimdiff
-:Gw             | write to file and stage result
+:Gedit          | edit a file
+:Gw             | write to file and stage result (git add)
 :Gwq            | same as above and quit
 :Git commit     | commit in a separate pane
 :Gdiff          | open git diff in separate pane
@@ -63,6 +65,19 @@ gwx  | git rm -r
 gRl  | git remote --verbose
 
 (~/.zprezto/modules/git/alias.zsh)
+%
+Revert to the specific revision using git reset
+
+Here we first hard reset the state of the repository to some previous revision
+and then soft reset back to current state.
+The soft reset will keep file modifications,
+so it will bring old state back on top of the current state:
+
+# Careful, reset --hard will remove non-commited changes
+$ git reset --hard 0682c06  # Use the SHA1 of the revision you want to revert to
+HEAD is now at 0682c06 G3
+$ git reset --soft HEAD@{1}
+$ git commit -m "Reverting to the state of the project at 0682c06"
 %
 terminator — Multiple GNOME terminals in one window
 
