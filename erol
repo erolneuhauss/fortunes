@@ -158,7 +158,6 @@ GNOME Tipps
 open . | opens current folder in nautilus (open is an alias for "gio open")
 
 clip        | shows gnome-gpaste history
-clipl       | pipes it to bat
 clipo       | shows above as oneliner
 clip get 6  | get the 6th entry
 
