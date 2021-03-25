@@ -34,7 +34,8 @@ r: shell built-in command (r us same as fc -e -)
 ❯ vim
 gcc             | comment stuff out
 :SSave          | save as session
-:Git log
+:Git            | like git status
+:Git log        | git log
 :Gdiffsplit     | perform a vimdiff
 :Gedit          | edit a file
 :Gw             | write to file and stage result (git add)
