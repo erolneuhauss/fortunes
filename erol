@@ -69,7 +69,7 @@ gRl  | git remote --verbose
 
 (~/.zprezto/modules/git/alias.zsh)
 %
-Revert to the specific revision using git reset
+GIT: Revert to the specific revision using git reset
 
 Here we first hard reset the state of the repository to some previous revision
 and then soft reset back to current state.
