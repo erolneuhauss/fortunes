@@ -57,6 +57,7 @@ gp   | git push
 gwd  | git diff --no-ext-diff
 gws  | git status --ignore-submodules=${_git_status_ignore_submodules} --short
 gRl  | git remote --verbose
+gix  | git rm -r --cached
 
 (~/.zprezto/modules/git/alias.zsh)
 %
