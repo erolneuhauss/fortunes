@@ -46,13 +46,25 @@ esx c-\ c-n     | in terminal mode switch back to NORMAL mode
 :Gedit          | edit a file
 :Git commit     | commit in a separate pane
 :Git log        | git log
-:Gr             | Git checkout
-:Gw             | Git add
+:Gr             | git checkout
+:Gw             | git add
 :Gwq            | same as above and quit
-:vertical Git   | vertikal
 
+(https://github.com/tpope/vim-fugitive)
+%
+im fugitive-maps staging/unstaging
 
-(https://github.com/tpope/vim-commentary)
+-     | Stage (add) or unstage (reset) the file or hunk under the cursor
+=     | Toggle an inline diff of the file under the cursor.
+
+(https://github.com/tpope/vim-fugitive)
+%
+im fugitive-maps commit
+
+cc    | create commit
+cs    | create a squash commit
+
+(https://github.com/tpope/vim-fugitive)
 %
 g    | git
 gbc  | git checkout -b
