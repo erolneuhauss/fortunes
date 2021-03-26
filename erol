@@ -71,8 +71,10 @@ cs    | create a squash commit
 g    | git
 gbc  | git checkout -b
 gbl  | git branch --verbose
+gbx  | git branch -D
 gcm  | git commit --message
 gco  | git checkout
+gcp  | git cherry-pick --ff
 gfm  | git pull
 gia  | git add
 gid  | git diff --cached
