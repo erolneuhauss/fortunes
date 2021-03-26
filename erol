@@ -56,12 +56,14 @@ esx c-\ c-n     | in terminal mode switch back to NORMAL mode
 
 -     | Stage (add) or unstage (reset) the file or hunk under the cursor
 =     | Toggle an inline diff of the file under the cursor.
+X     | Discard the change under the cursor
 
 (https://github.com/tpope/vim-fugitive)
 %
 im fugitive-maps commit
 
 cc    | create commit
+cvc   | create commit --verbose
 cs    | create a squash commit
 
 (https://github.com/tpope/vim-fugitive)
