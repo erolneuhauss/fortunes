@@ -75,6 +75,7 @@ gcm  | git commit --message
 gco  | git checkout
 gfm  | git pull
 gia  | git add
+gid  | git diff --cached
 gix  | git rm -r --cached
 gm   | git merge
 gl   | git log --topo-order --pretty=format:"${_git_log_medium_format}"
