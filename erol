@@ -29,7 +29,7 @@ fc — process the command line history
 
 r: shell built-in command (r us same as fc -e -)
 %
-im and vim-fugitive
+im
 
 ❯ vim
 gcc             | comment stuff out
@@ -37,15 +37,19 @@ gcc             | comment stuff out
 esx c-\ c-n     | in terminal mode switch back to NORMAL mode
 :SSave          | save as session
 
+%
+im fugitive
+
 :Git            | like git status
-:Git log        | git log
-:Gdiffsplit     | perform a vimdiff
-:Gedit          | edit a file
-:Gw             | Git add
-:Gr             | Git checkout
-:Gwq            | same as above and quit
-:Git commit     | commit in a separate pane
+:G              | short for :Git
 :Gdiff          | open git diff in separate pane
+:Gedit          | edit a file
+:Git commit     | commit in a separate pane
+:Git log        | git log
+:Gr             | Git checkout
+:Gw             | Git add
+:Gwq            | same as above and quit
+:vertical Git   | vertikal
 
 
 (https://github.com/tpope/vim-commentary)
